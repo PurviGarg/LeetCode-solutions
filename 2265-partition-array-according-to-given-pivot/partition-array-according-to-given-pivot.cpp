@@ -20,11 +20,7 @@ public:
             }
         }
         // sort(ans1.begin(),ans1.end());
-
-
 ans.insert(ans.end(),ans1.begin(),ans1.end());
-
-
 return ans;
     }
 };
