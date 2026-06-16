@@ -12,7 +12,6 @@ public:
         int sum=nums[i]+nums[left]+nums[right];
        if(abs(target-sum)<abs(target-cs)){
         cs=sum;
-       
        }
       if(sum<target){
         left++;
