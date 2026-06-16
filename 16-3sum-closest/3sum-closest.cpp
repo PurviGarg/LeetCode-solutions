@@ -14,13 +14,15 @@ public:
         cs=sum;
        
        }
-      else if(sum<target){
+      if(sum<target){
         left++;
       }
-      else{
+      else if(sum>target){
         right--;
       }
-
+else{
+    return sum;
+}
       } 
        }
 return cs;
