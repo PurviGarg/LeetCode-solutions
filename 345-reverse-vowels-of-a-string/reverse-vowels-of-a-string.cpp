@@ -8,24 +8,38 @@ public:
         int left=0;
         int right=s.size()-1;
 
-while(right>left){
-    if(isvowel(s[left]) && !isvowel(s[right])){
-        right--;
-    }
-     else if(!isvowel(s[left]) && !isvowel(s[right])){
-        left++;
-        right--;
-    }
-    else if(!isvowel(s[left]) && isvowel(s[right])){
-        left++;
+// while(right>left){
+//     if(isvowel(s[left]) && !isvowel(s[right])){
+//         right--;
+//     }
+//      else if(!isvowel(s[left]) && !isvowel(s[right])){
+//         left++;
+//         right--;
+//     }
+//     else if(!isvowel(s[left]) && isvowel(s[right])){
+//         left++;
         
+//     }
+//      else{
+//         swap(s[left],s[right]);
+//         left++;
+//         right--;
+//      }
+
+// }
+
+
+while(right>left){
+    while(right>left && !isvowel(s[left])){
+        left++;
     }
-     else{
-        swap(s[left],s[right]);
+     while(right>left && !isvowel(s[right])){
+        right--;
+    }
+    swap(s[left],s[right]);
         left++;
         right--;
-     }
-
+    
 }
 return s;
     }
