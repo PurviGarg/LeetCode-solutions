@@ -10,12 +10,9 @@ while(left<right){
     }
    else {
    char ch= min(s[left],s[right]);
-            if(ch==s[left]){
-                s[right]=ch;
-            }
-            else{
-                s[left]=ch;
-            }}
+           s[left]=ch;
+           s[right]=ch;
+           }
    
 }  return s;
     }
