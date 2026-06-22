@@ -6,7 +6,7 @@ public:
         int j=0;
         int i=0;
         for(int i=0;i<n;i++){
-            int dis= INT_MAX;
+            int dis= n;
             for(int j=i;j<n;j++){
                 if(s[j]==c){
                   dis=abs(j-i);
