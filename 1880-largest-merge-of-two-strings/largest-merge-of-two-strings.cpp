@@ -4,17 +4,13 @@ public:
         string merge="";
        int i=0;
        int j=0;
-       
        while(i<word1.size() && j<word2.size()){
-   
         if( word1.substr(i)>word2.substr(j)){
      merge.push_back(word1[i]);
         i++;}
 
         else{merge.push_back(word2[j]);
           j++;
-        
-
     }}
    while(i<word1.size()){
      merge.push_back(word1[i]);
@@ -24,11 +20,6 @@ public:
      merge.push_back(word2[j]);
        j++;
    } 
-
-    
-    
-    
-    
 return merge;
     }
 };
