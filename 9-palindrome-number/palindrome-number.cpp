@@ -5,14 +5,14 @@ public:
             return false;
         }
         int rem;
-        int ori=x;
+        int orii=x;
         long long reverse=0;
         while(x!=0){
 rem=x%10;
 reverse=reverse*10+rem;
 x=x/10;
         }
-    if(ori==reverse){
+    if(orii==reverse){
     return true;
     }
    return false;
